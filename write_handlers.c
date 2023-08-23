@@ -20,8 +20,8 @@ UNUSED(precision);
 UNUSED(size);
 if (flags & F_ZERO)
 padd = '0';
-buffer[i++] = c;
-buffer[i] = '\0';
+buffer[a++] = c;
+buffer[a] = '\0';
 if (width > 1)
 {
 buffer[BUFF_SIZE - 1] = '\0';
@@ -140,7 +140,7 @@ char buffer[],
 int flags, int width, int precision, int size)
 {
 /* The number is stored at the bufer's right and starts at position i */
-int length = BUFF_SIZE - ind - 1, i = 0;
+int length = BUFF_SIZE - ind - 1, a = 0;
 char padd = ' ';
 UNUSED(is_negative);
 UNUSED(size);
